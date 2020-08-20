@@ -146,7 +146,7 @@ extension SyncingServicesViewController
         case .authenticate:
             if SyncManager.shared.coordinator?.account != nil
             {
-                cell.textLabel?.textColor = .red
+                cell.textLabel?.textColor = .systemRed
                 cell.textLabel?.text = NSLocalizedString("Sign Out", comment: "")
             }
             else
