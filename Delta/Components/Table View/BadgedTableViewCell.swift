@@ -30,7 +30,7 @@ class BadgedTableViewCell: UITableViewCell
     {
         self.badgeLabel.clipsToBounds = true
         self.badgeLabel.textAlignment = .center
-        self.badgeLabel.backgroundColor = .red
+        self.badgeLabel.backgroundColor = .systemRed
         self.badgeLabel.font = UIFont.boldSystemFont(ofSize: 14)
         self.badgeLabel.textColor = .white
         self.contentView.addSubview(self.badgeLabel)
@@ -62,7 +62,7 @@ class BadgedTableViewCell: UITableViewCell
         self.badgeLabel.frame = frame
         self.badgeLabel.layer.cornerRadius = frame.height / 2
         
-        self.badgeLabel.backgroundColor = .red
+        self.badgeLabel.backgroundColor = .systemRed
         
         let overlap = textLabel.frame.maxX - (frame.minX - spacing)
         if overlap > 0 && !self.badgeLabel.isHidden

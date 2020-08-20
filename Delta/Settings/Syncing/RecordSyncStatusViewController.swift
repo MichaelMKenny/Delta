@@ -171,7 +171,7 @@ extension RecordSyncStatusViewController
             if self.record?.isConflicted == true
             {
                 cell.textLabel?.text = NSLocalizedString("Resolve Conflict", comment: "")
-                cell.textLabel?.textColor = .red
+                cell.textLabel?.textColor = .systemRed
             }
             else
             {

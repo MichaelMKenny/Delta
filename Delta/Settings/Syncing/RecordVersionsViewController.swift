@@ -185,7 +185,7 @@ private extension RecordVersionsViewController
             
         case .resolveConflict:
             self.restoreButton.title = NSLocalizedString("Resolve", comment: "")
-            self.restoreButton.tintColor = .red
+            self.restoreButton.tintColor = .systemRed
             
             self.restoreButton.isEnabled = (self._selectedVersionIndexPath != nil)
         }

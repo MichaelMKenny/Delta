@@ -78,7 +78,7 @@ private extension InputCalloutView
         switch self.state
         {
         case .normal: self.textLabel.textColor = self.tintColor
-        case .listening: self.textLabel.textColor = .red
+        case .listening: self.textLabel.textColor = .systemRed
         }
     }
 }
