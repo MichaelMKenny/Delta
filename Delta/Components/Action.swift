@@ -100,7 +100,7 @@ extension UIAlertController
 {
     convenience init(actions: [Action])
     {
-        self.init(title: nil, message: nil, preferredStyle: .actionSheet)
+        self.init(title: nil, message: nil, preferredStyle: UIAlertController.ipadSafeStyle)
         
         for action in actions.alertActions
         {

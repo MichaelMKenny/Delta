@@ -359,7 +359,7 @@ private extension RecordVersionsViewController
             actionTitle = NSLocalizedString("Resolve Conflict", comment: "")
         }
         
-        let alertController = UIAlertController(title: nil, message: message, preferredStyle: .actionSheet)
+        let alertController = UIAlertController(title: nil, message: message, preferredStyle: UIAlertController.ipadSafeStyle)
         alertController.addAction(.cancel)
         alertController.addAction(UIAlertAction(title: actionTitle, style: .destructive) { (action) in
             self.restoreVersion()

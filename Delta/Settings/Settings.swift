@@ -390,3 +390,10 @@ private extension UserDefaults
 
     @NSManaged var sortSaveStatesByOldestFirst: Bool
 }
+
+extension UIAlertController
+{
+    static var ipadSafeStyle: UIAlertController.Style {
+        UIDevice.current.userInterfaceIdiom == .pad ? .alert : .actionSheet
+    }
+}
