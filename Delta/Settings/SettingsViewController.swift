@@ -85,7 +85,7 @@ class SettingsViewController: UITableViewController
     {
         super.viewDidLoad()
         
-        tableView.estimatedRowHeight = 0
+        tableView.estimatedRowHeight = 44
         tableView.estimatedSectionHeaderHeight = 0
         tableView.estimatedSectionFooterHeight = 0
         
