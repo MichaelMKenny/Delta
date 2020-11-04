@@ -544,7 +544,9 @@ private extension GameViewController
         }
         
         // If Settings.localControllerPlayerIndex is non-nil, and there isn't a connected controller with same playerIndex, show controller view.
-        if let index = Settings.localControllerPlayerIndex, !ExternalGameControllerManager.shared.connectedControllers.contains { $0.playerIndex == index }
+        let index = Settings.localControllerPlayerIndex ?? 0
+        if !ExternalGameControllerManager.shared.connectedControllers.contains(where: { $0.playerIndex == index })
+            || self.isSideBySideDSSkin
         {
             self.controllerView.playerIndex = index
             self.controllerView.isHidden = false
